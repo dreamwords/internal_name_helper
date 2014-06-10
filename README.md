@@ -16,6 +16,18 @@ lite
 standard
 pro
 
+Include the module in Model part
+
+```ruby
+	gem 'internal_name_helper'
+```
+
+```ruby
+	class Plan < ActiveRecord::Base  
+	  include InternalNameHelper::Methods
+	end
+```
+
 The following methods will be generated
 
 Class Methods
